@@ -1,34 +1,5 @@
 # REAN-jenkins
 
-This Cookbook install the REAN-jenkins
-
-## **Recipes**
-
-This Cookbook has the following recipes
-
-**default**
-
-**plugins**
-
-**terraform**
-
-**packer**
-
-**firewall**
-
-**selinux**
-
-## **Input variables**
-
-**Variables**                | **Description**
------------------------------|------------------------------------------------------------------
-required_plugins			 | required jenkins plugins to install 
-default_plugins				 | default plugins to be installed like git, rvm etc,.
-extra_plugins                | any additional plugins needed
-['terraform']['version']	 | terraform version
-['packer']['version']		 | packer version
-
-
 Overview of Jenkins, Packer and Terraform installation cookbook:-
 ----------------------------------------------------------------
     REAN-jenkins cookbook has below recipes:-
@@ -43,6 +14,16 @@ Overview of Jenkins, Packer and Terraform installation cookbook:-
       firewall
       jenkins_user
       selinux
+ 
+## **Input variables**
+
+**Variables**                | **Description**
+-----------------------------|------------------------------------------------------------------
+required_plugins			 | required jenkins plugins to install 
+default_plugins				 | default plugins to be installed like git, rvm etc,.
+extra_plugins                | any additional plugins needed
+['terraform']['version']	 | terraform version
+['packer']['version']		 | packer version
       
 Pre-requisites:-
 ----------------
